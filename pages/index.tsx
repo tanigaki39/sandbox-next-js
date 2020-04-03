@@ -1,9 +1,10 @@
 import React from "react";
+import { NextPage } from "next";
 import Link from "next/link";
 import Head from "next/head";
 import axios from "axios";
 
-const HomePage: React.FC = () => {
+const HomePage: NextPage = () => {
   const [message, setMessage] = React.useState("");
   const [posts, setPosts] = React.useState<any[]>([]);
 
@@ -25,6 +26,16 @@ const HomePage: React.FC = () => {
         <title>The Index Page</title>
         <meta name="description" content="this is the index page" />
       </Head>
+      <p>
+        <Link href="/about/">
+          <a>to about page</a>
+        </Link>
+      </p>
+      <p>
+        <Link href="/carousel/">
+          <a>to carousel page</a>
+        </Link>
+      </p>
       <h1>Next.js practice</h1>
       <p>message: {message}</p>
       <div>
@@ -35,12 +46,6 @@ const HomePage: React.FC = () => {
           ))}
         </div>
       </div>
-      <h2>About</h2>
-      <p>
-        <Link href="/about/">
-          <a>to about page</a>
-        </Link>
-      </p>
     </div>
   );
 };

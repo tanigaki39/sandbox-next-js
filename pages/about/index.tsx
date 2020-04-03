@@ -1,8 +1,9 @@
+import { NextPage } from "next";
 import Link from "next/link";
 import Head from "next/head";
 import * as React from "react";
 
-const About: React.FC = () => {
+const About: NextPage = () => {
   return (
     <div>
       <Head>
