@@ -3,7 +3,7 @@
     "dev": "next",
     "build": "next build",
     "export": "next export",
-    "deploy": "yarn build && yarn export",
+    "deploy": "yarn build && yarn export -o dist",
     "start": "next start",
     "lint": "eslint .",
     "fix": "eslint --fix .",
