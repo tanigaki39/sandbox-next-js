@@ -36,6 +36,11 @@ const HomePage: NextPage = () => {
           <a>to carousel page</a>
         </Link>
       </p>
+      <p>
+        <Link href="/reveal/">
+          <a>to reveal page</a>
+        </Link>
+      </p>
       <h1>Next.js practice</h1>
       <p>message: {message}</p>
       <div>
